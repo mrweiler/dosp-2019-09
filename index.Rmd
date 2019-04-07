@@ -1,0 +1,104 @@
+---
+title: <small>An introduction to digital open <br>research in clinical psychology</small>
+author: <small>Matthias Weiler</small>
+date: <small>08.04.2019</small>
+output:
+  revealjs::revealjs_presentation:
+    theme: black
+    center: TRUE
+    self_contained: FALSE
+    incremental: TRUE
+    reveal_plugins: ["chalkboard"]
+    css: styles.css
+    reveal_options:
+      chalkboard: 
+      readonly: FALSE
+---
+
+
+# <small> What did we do last session?</small>
+
+----
+
+We did some Q&A
+
+----
+
+... learned how to do graphics with R
+
+----
+
+... and fought an ever increasing  
+feeling of desperation
+
+----
+
+Any questions or anything to add?
+
+
+
+# <small>Last session's homework</small>
+
+----
+
+Who of you added graphics to your slides?
+
+----
+
+... added graphics to your R Notebooks?
+
+----
+
+Any questions regarding  
+last session's homework?
+
+
+
+# <small>Today:<br>Putting it all together</small>
+
+
+
+# <small>The bigger picture</small>
+
+----
+
+The hypothetico-deductive model (Munafo et al. 2017)  
+![The hypothetico-deductive model](img/s41562-016-0021-f1_edited.jpg)  
+<small>Source (edited): https://media.nature.com/lw926/nature-assets/nathumbehav/2017/s41562-016-0021/images_hires/s41562-016-0021-f1.jpg</small>
+
+----
+
+
+Registered reports  
+![Registered reports](img/registered_reports.width-800.png)
+
+<small>Source: https://cos.io/rr/</small>
+
+----
+
+Registered reports  
+![Registered reports](img/RR_workflow_diagram_400.png)
+
+
+
+# <small>Any questions?</small>
+
+
+
+# <small>Preview: next session</small>
+
+----
+
+"Final presentations"
+
+
+
+# <small>Homework</small>
+
+
+
+# <small>Any questions?</small>
+
+
+
+# <small>Thank you for your attention</small>
