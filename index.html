@@ -11,6 +11,69 @@
   <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/reveal.css"/>
 
 
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="index_files/reveal.js-3.3.0.1/css/theme/black.css" id="theme">
 
@@ -487,7 +550,8 @@ feeling of desperation</p>
 <p>Any questions regarding<br />
 last session’s homework?</p>
 </section></section>
-<section><section id="today-putting-it-all-together" class="title-slide slide level1"><h1><small>Today:<br>Putting it all together</small></h1></section><section class="slide level2">
+<section id="today-putting-it-all-together" class="title-slide slide level1"><h1><small>Today:<br>Putting it all together</small></h1></section>
+<section><section id="the-bigger-picture" class="title-slide slide level1"><h1><small>The bigger picture</small></h1></section><section class="slide level2">
 
 <p>The hypothetico-deductive model (Munafo et al. 2017)<br />
 <img data-src="img/s41562-016-0021-f1_edited.jpg" alt="The hypothetico-deductive model" /><br />
@@ -502,12 +566,141 @@ last session’s homework?</p>
 <p>Registered reports<br />
 <img data-src="img/RR_workflow_diagram_400.png" alt="Registered reports" /></p>
 </section></section>
+<section><section id="what-we-did-so-far" class="title-slide slide level1"><h1><small>What we did so far</small></h1></section><section id="the-proposal-presentations" class="slide level2">
+<h2><small>The proposal presentations</small></h2>
+<ul>
+<li class="fragment">R Presentation including:<br />
+</li>
+<li class="fragment">Introduction, Methods,<br />
+Proposed analysis,<br />
+References</li>
+</ul>
+</section><section id="data-collection" class="slide level2">
+<h2><small>Data collection</small></h2>
+<ul>
+<li class="fragment">R Script to collect:<br />
+</li>
+<li class="fragment">Google trends data<br />
+</li>
+<li class="fragment">Optional additional data</li>
+</ul>
+</section><section id="data-analysis" class="slide level2">
+<h2><small>Data analysis</small></h2>
+<ul>
+<li class="fragment">R Script to analyze data using:<br />
+</li>
+<li class="fragment">t-tests<br />
+</li>
+<li class="fragment">correlation</li>
+</ul>
+</section><section id="data-analysis-1" class="slide level2">
+<h2><small>Data analysis</small></h2>
+<ul>
+<li class="fragment">R Notebook to:<br />
+</li>
+<li class="fragment">document your code<br />
+</li>
+<li class="fragment">include graphics</li>
+</ul>
+</section><section id="data-visualization" class="slide level2">
+<h2><small>Data visualization</small></h2>
+<ul>
+<li class="fragment">R Script to generate:<br />
+</li>
+<li class="fragment">various types of graphics<br />
+</li>
+<li class="fragment">using to ggplot2 package</li>
+</ul>
+</section><section id="any-questions-or-anything-to-add" class="slide level2">
+<h2><small>Any questions or anything to add?</small></h2>
+</section></section>
+<section><section id="what-is-left-to-do" class="title-slide slide level1"><h1><small>What is left to do</small></h1></section><section class="slide level2">
+
+<p>Report result - automatically</p>
+</section><section class="slide level2">
+
+<p>Add a discussion section</p>
+</section><section class="slide level2">
+
+<p>Add references - automatically</p>
+</section></section>
+<section><section id="report-result---automatically" class="title-slide slide level1"><h1><small>Report result - automatically</small></h1></section><section id="generate-data" class="slide level2">
+<h2><small>Generate data</small></h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">a &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">30</span>; b &lt;-<span class="st"> </span><span class="dv">20</span><span class="op">:</span><span class="dv">50</span></a>
+<a class="sourceLine" id="cb1-2" title="2">result &lt;-<span class="st"> </span><span class="kw">t.test</span>(<span class="dt">x =</span> a, <span class="dt">y =</span> b)</a></code></pre></div>
+</section><section id="add-inline-code" class="slide level2">
+<h2><small>Add inline code</small></h2>
+<pre><code>On average depression levels were lower for group A 
+(M = &#39;r mean(a)&#39;, SD = &#39;r round(sd(a), 2)&#39;) compared 
+to group B (M = &#39;r mean(b)&#39;, SD = &#39;r round(sd(b), 2)&#39;).</code></pre>
+<pre><code>This difference was significant 
+t(&#39;r round(result$parameter, 2)&#39;) = 
+&#39;r round(result$statistic, 2)&#39;, p &lt; 0.01.</code></pre>
+</section><section id="instant-report" class="slide level2">
+<h2><small>Instant report</small></h2>
+<pre><code>On average depression levels were lower 
+for group A (M = 15.5, SD = 8.8) compared 
+to group B (M = 35, SD = 9.09).
+
+
+This difference was significant 
+t(59) = -8.51, p &lt; 0.01.</code></pre>
+</section></section>
+<section><section id="add-a-discussion-section" class="title-slide slide level1"><h1><small>Add a discussion section</small></h1></section><section class="slide level2">
+
+<p>Interpret your results</p>
+</section><section class="slide level2">
+
+<p>Add some future implications</p>
+</section></section>
+<section><section id="add-references---automatically" class="title-slide slide level1"><h1><small>Add references - automatically</small></h1></section><section class="slide level2">
+
+<p>Export your Zotero library</p>
+</section><section class="slide level2">
+
+<p>Link you library in your<br />
+R Markdown document</p>
+</section><section class="slide level2">
+
+<p>Add CSL style</p>
+</section><section class="slide level2">
+
+<p>Add references like this <span class="citation" data-cites="Munafomanifestoreproduciblescience2017">(Munafò et al., 2017)</span></p>
+</section><section class="slide level2">
+
+Generate reference list
+<div id="refs" role="doc-bibliography">
+<div id="ref-Munafomanifestoreproduciblescience2017">
+<p>Munafò, M. R., Nosek, B. A., Bishop, D. V. M., Button, K. S., Chambers, C. D., Percie du Sert, N., … Ioannidis, J. P. A. (2017). A manifesto for reproducible science. <em>Nature Human Behaviour</em>, <em>1</em>(1), 0021. <a href="https://doi.org/10.1038/s41562-016-0021">https://doi.org/10.1038/s41562-016-0021</a></p>
+</div>
+</div>
+</section></section>
 <section id="any-questions" class="title-slide slide level1"><h1><small>Any questions?</small></h1></section>
 <section><section id="preview-next-session" class="title-slide slide level1"><h1><small>Preview: next session</small></h1></section><section class="slide level2">
 
 <p>“Final presentations”</p>
+</section><section class="slide level2">
+
+<p>Please post a link to the slides<br />
+for your group’s presentation on the<br />
+#final_presentation channel in Slack</p>
+</section><section class="slide level2">
+
+<p>Please also make the preregistrations<br />
+for your group’s project available on the<br />
+#final_presentation channel in Slack</p>
+</section><section class="slide level2">
+
 </section></section>
-<section id="homework" class="title-slide slide level1"><h1><small>Homework</small></h1></section>
+<section><section id="homework" class="title-slide slide level1"><h1><small>Homework</small></h1></section><section class="slide level2">
+
+<p>Finish your slides</p>
+</section><section class="slide level2">
+
+<p>Finish your RNotebook</p>
+</section><section class="slide level2">
+
+</section></section>
 <section id="any-questions-1" class="title-slide slide level1"><h1><small>Any questions?</small></h1></section>
 <section id="thank-you-for-your-attention" class="title-slide slide level1"><h1><small>Thank you for your attention</small></h1></section>
     </div>
